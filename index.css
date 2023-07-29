@@ -1,0 +1,365 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background: #f8f8f8;
+    box-shadow: 0px 1px 4px 0px rgb(82, 50, 50);
+    width: 100%;
+    height: 80px;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .logo {
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    float: right;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a {
+    color: #000;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  .active,
+  a:hover {
+    background: #1b9bff;
+    transition: 0.5s;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  
+  /* header {
+    background: url("https://www.realmadrid.com/img/cc_1280px/marcelo-levanta-copa-ok_20230508101013.jpg")
+      no-repeat center center/cover;
+    width: 100%;
+    height: 80vh;
+  } */
+  
+ 
+  
+
+header{
+    width: 100%;
+    height: 80vh; 
+    padding: 0 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p{
+    font-size: 12px;
+    color: #4F5665;
+}
+.left button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #F53838;
+    color: #fff;
+}
+
+.right img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.parents{
+     padding: 50px 100px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 30px;     
+}
+
+.card img{
+   width: 50px;
+}
+
+.card{
+    display: flex;
+    gap: 10px;
+    box-shadow: #4F5665;
+}
+
+section{
+    width: 100%;
+    height: 80vh;
+    padding: 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background-color: #fafafa;
+}
+
+.aa img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.ll{
+    background: linear-gradient(180deg, #ebebeb -45.04%, rgba(248, 248, 248, 0) 88.56%);;
+    font-size: 40px;
+    text-align: center;  
+    padding: 40px;  
+}
+
+.ll h4{
+    padding: 40px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;      
+}
+
+.ota-div{
+    padding: 40px 100px;
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     gap: 30px;
+     align-items: center;
+     text-align: center;
+}
+
+h5{
+    padding: 20px;
+    font-size: 20px;
+}
+
+h6{
+    font-size: 16px;
+}
+
+.ss{
+    border-color: crimson;
+    border-radius: 50px;
+    color: crimson;
+    padding: 5px 30px ;
+    background: none;
+}
+
+.sss,.pp{
+    width: 330px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+
+.yy{
+    padding: 5px 30px;
+    border: none;
+    border-radius: 10px;
+    background: #F53838;
+    color: #fff;
+}
+
+.ww{
+    padding: 40px;
+}
+
+.ww img{
+    width: 100%;
+}
+
+.ii {
+    padding: 40px;
+}
+
+.ii img{
+    width: 100%;
+}
+
+aside{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.left2 h4{
+    font-size: 24px;
+}
+
+.right2 button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background: #F53838;
+    color: #fff;
+}
+
+footer{
+    width: 100%;
+    height: 60vh;
+    padding: 70px;
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: repeat(4,1fr );
+}
+
+@media all and (max-width: 952px) {
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .logo {
+      font-size: 30px;
+    }
+    nav ul li a {
+      font-size: 16px;
+    }
+  }
+  @media all and (max-width: 858px) {
+    .container {
+      width: 100%;
+      padding: 0 30px;
+    }
+    .checkbtn {
+      display: block;
+    }
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      right: -100%;
+      text-align: center;
+      transition: all 0.9s;
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+      color: #fff;
+    }
+    a:hover .active {
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul {
+      right: 0;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  @media all and (max-width: 952px){
+    header{
+        flex-direction: column-reverse;
+        padding: 50px 100px;
+    }
+    .left{
+        text-align: center;
+    }
+  }
+
+  @media all and (max-width: 858px){
+    header{
+        flex-direction: column-reverse;
+        padding: 0px 50px;
+    }
+    .left{
+        text-align: center;
+    }
+  }
+
+  @media all and (max-width: 600px){
+
+  }
+
+  @media all and (max-width: 952px){
+    section{
+        height: max-content;
+        flex-direction: column;
+        padding: 50px 100px;
+    }
+    .bb{
+        text-align: center;
+    }
+  }
+
+  footer{
+    width: 100%;
+    background-color: #F8F8F8;
+    height: max-content;
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+  }
+
+@media all and (max-width: 1216px) {
+    footer{
+        width: 100%;
+        background-color: #F8F8F8;
+        height: max-content;
+        padding: 40px 80px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+      }
+}
+
+@media all and (max-width: 952px) {
+    footer{
+        width: 100%;
+        background-color: #F8F8F8;
+        height: max-content;
+        padding: 30px 60px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+      }
+}
+
+@media all and (max-width: 600px) {
+    footer{
+        width: 100%;
+        background-color: #F8F8F8;
+        height: max-content;
+        padding: 20px 40px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        text-align: center;
+      }
+}
